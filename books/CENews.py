@@ -4,16 +4,16 @@ from bs4 import BeautifulSoup
 from base import BaseFeedBook, URLOpener, string_of_tag
 
 def getBook():
-    return CENews
+    return cenews
 
-class CENews(BaseFeedBook):
+class cenews(BaseFeedBook):
     title                 = u'双语新闻'
     description           = u'双语新闻选取了中国日报，FT双语栏目，以及其他双语新闻。'
     language              = 'en'
     feed_encoding         = "utf-8"
     page_encoding         = "utf-8"
-    mastheadfile          = "mh_CENews.gif"
-    coverfile             = "cv_CENews.jpg"
+    mastheadfile          = "mh_cenews.gif"
+    coverfile             = "cv_cenews.jpg"
     oldest_article        = 7
     
     feeds = [
