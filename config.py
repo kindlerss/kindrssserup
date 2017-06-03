@@ -4,8 +4,8 @@
 KindleEar配置文件，请务必修改开始两个配置（如果使用uploader，则uploader自动帮你修改）
 """
 
-SRC_EMAIL = "wangyaoxuan2015@gmail.com"  #Your gmail account for sending mail to Kindle
-DOMAIN = "https://kindlerss006.appspot.com" #Your domain of app
+SRC_EMAIL = "123@gmail.com"  #Your gmail account for sending mail to Kindle
+DOMAIN = "https://kindle.appspot.com" #Your domain of app
 
 TIMEZONE = 8  #Default timezone, you can modify it in webpage after deployed
 
@@ -45,7 +45,7 @@ GENERATE_TOC_THUMBNAIL = True
 GENERATE_HTML_TOC = True
 
 #if convert color image to gray or not, good for reducing size of book if you read it in Kindle only
-COLOR_TO_GRAY = True
+COLOR_TO_GRAY = False
 #----------------end of add by rexdf-------
 
 #reduce dimension of image to (Width,Height)
