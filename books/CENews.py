@@ -8,7 +8,7 @@ def getBook():
 
 class CENews(BaseFeedBook):
     title                 = u'双语新闻'
-    description           = u'双语新闻选取了China Daily，FT双语栏目，以及其他双语新闻。'
+    description           = u'双语新闻选取了中国日报，FT双语栏目，以及其他双语新闻。'
     language              = 'en'
     feed_encoding         = "utf-8"
     page_encoding         = "utf-8"
@@ -21,3 +21,7 @@ class CENews(BaseFeedBook):
         (u'中国日报|双语', 'http://www.chinadaily.com.cn/rss/lt_rss.xml'),
         (u'爱语吧|双语', 'http://feed43.com/3865665266733664.xml'),
         ]
+	def fetcharticle(self, url, opener, decoder):
+        #每个URL都增加一个后缀full=y，如果有分页则自动获取全部分页
+        url += '?full=y'
+        return BaseFeedBook.fetcharticle(self,url,opener,decoder)
